@@ -69,6 +69,9 @@
         <link href="{{ asset('vendor/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet">
     </head>
     <body>
+
+        @include('vendor.sweetalert.view')
+    
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -84,6 +87,10 @@
             <div class="content">
                 <div class="title m-b-md">
                     {{ __('lng.site_title') }}
+                </div>
+
+                <div class="links">
+                    <a href="{{ route('swal') }}">Проверка SwitAlert</a>
                 </div>
             </div>
         </div>

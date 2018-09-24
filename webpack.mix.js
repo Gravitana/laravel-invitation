@@ -13,3 +13,9 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css');
+
+mix
+    //--- SweetAlert2
+    .copy('node_modules/sweetalert2/dist/sweetalert2.all.min.js',   'public/vendor/sweetalert2')
+    .copy('node_modules/sweetalert2/dist/sweetalert2.min.css',      'public/vendor/sweetalert2')
+;

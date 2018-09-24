@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//--- Проверка SwitAlert
+Route::get('swal', function () {
+    SWAL::message('Success','SwitAlert2','success',['timer'=>2000]);
+    return redirect()->back();
+})->name('swal');
