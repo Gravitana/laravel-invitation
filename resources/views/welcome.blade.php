@@ -89,9 +89,9 @@
                     {{ __('lng.site_title') }}
                 </div>
 
-                <div class="links">
-                    <a href="{{ route('swal') }}">Проверка SwitAlert</a>
-                </div>
+                {{--<div class="links">--}}
+                    {{--<a href="{{ route('swal') }}">Проверка SwitAlert</a>--}}
+                {{--</div>--}}
             </div>
         </div>
     </body>

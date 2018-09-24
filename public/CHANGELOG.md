@@ -20,6 +20,11 @@
 
 
 
+
+## [0.0.3] - 2018-09-24
+### Added
+- Добавлен функционал регистрации по приглашению.
+
 ## [0.0.3] - 2018-09-24
 ### Added
 - Установлен js-пакет [SweetAlert2](https://github.com/sweetalert2/sweetalert2)
@@ -27,12 +32,16 @@
 
 ## [0.0.2] - 2018-09-24
 ### Added
-- Настроена локализация шаблонов.
 - Установлен [Laravel 5 IDE Helper Generator](https://github.com/barryvdh/laravel-ide-helper)
     [Подсказки](https://evilinside.ru/kak-sozdat-novyj-proekt-na-laravel-5-6/)
 - Установлен [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar)
 
+### Changed
+- Настроена локализация шаблонов.
+    + общие фразы, не зависящие от контента, вынесены в файл *ru.json*
+    + фразы, связанные с контентом или содержащие замещения, сохраняются в файлах *lng.php* для каждой локализации
+
 ## [0.0.1] - 2018-09-24
 ### Added
-- Установлен фреймворк [Laravel](https://laravel.com) + Auth
+- Установлен фреймворк [Laravel](https://github.com/laravel/laravel) + Auth
 - Добавлен файл **CHANGELOG**

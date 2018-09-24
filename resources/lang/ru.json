@@ -27,14 +27,17 @@
   "Page Expired":               "Страница с истекшим сроком",
   "Page Not Found":             "Страница не найдена",
   "Password":                   "Пароль",
+  "Patronymic":                 "Отчество",
 
   "Re-sent":                    "Выслано повторно",
   "Register":                   "Регистрация",
+  "Required fields":            "Поля, обязательные для заполнения",
   "Remember Me":                "Запомнить меня",
   "Reset Password":             "Сброс пароля",
 
   "Send Password Reset Link":   "Отправить ссылку для сброса пароля",
   "Service Unavailable":        "Служба недоступна",
+  "Surname":                    "Фамилия",
 
   "The user is already registered.":                  "Пользователь уже зарегистрирован.",
   "This e-mail address is already in the database.":  "Такой адрес e-mail уже есть в базе данных.",

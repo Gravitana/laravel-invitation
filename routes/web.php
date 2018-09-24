@@ -17,10 +17,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('invite', 'InviteController@create')->name('invite');
+Route::post('invite', 'InviteController@store')->name('invite.store');
+Route::get('register/{?invite_token}', 'InviteController@getInviteByToken')->name('invite.use');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 //--- Проверка SwitAlert
-Route::get('swal', function () {
-    SWAL::message('Success','SwitAlert2','success',['timer'=>2000]);
-    return redirect()->back();
-})->name('swal');
+//Route::get('swal', function () {
+//    SWAL::message('Success','SwitAlert2','success',['timer'=>2000]);
+//    return redirect()->back();
+//})->name('swal');

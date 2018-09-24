@@ -11,6 +11,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        /*
+         * Если выходит ошибка "Class <ClassName> does not exist"
+         * нужно выполнить
+         * composer dumpautoload
+         */
+    
+        $this->call(UsersSeeder::class);
     }
 }
