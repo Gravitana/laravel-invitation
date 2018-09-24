@@ -15,7 +15,7 @@ class CreateInvitesTable extends Migration
     {
         Schema::create('invites', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('inviter_id');
+            $table->unsignedInteger('inviter_id')->nullable(); // если удалится тот, кто пригласил
             $table->unsignedInteger('invitee_id')->nullable(); // заполнится при использовании приглашения
             $table->string('invite_token');
             $table->string('email')->comment('Куда выслано приглашение');
@@ -28,8 +28,8 @@ class CreateInvitesTable extends Migration
             $table->unique('email');
     
             /* внешние ключи */
-            $table->foreign('inviter_id')->references('id')->on('users')->onUpdate('cascade');
-            $table->foreign('invitee_id')->references('id')->on('users')->onUpdate('cascade');
+            $table->foreign('inviter_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('set null');
+            $table->foreign('invitee_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
