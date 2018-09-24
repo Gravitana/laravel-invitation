@@ -1,0 +1,53 @@
+{
+  "Confirm Password":           "Повторите пароль",
+
+  "Dashboard":                  "Панель управления",
+
+  "E-Mail Address":             "Адрес e-mail",
+  "Enter email":                "Введите e-mail",
+  "Error":                      "Ошибка",
+
+  "Forgot Your Password?":      "Забыли пароль?",
+
+  "Go Home":                    "На домашнюю",
+
+  "Having some problems:":      "Имеются некоторые проблемы:",
+  "Hello!":                     "Здравствуйте!",
+  "Home":                       "Домой",
+
+  "Login":                      "Вход",
+  "Logout":                     "Выход",
+
+  "Message":                    "Сообщение",
+
+  "Name":                       "Имя",
+
+  "Oh no":                       "О, нет",
+
+  "Page Expired":               "Страница с истекшим сроком",
+  "Page Not Found":             "Страница не найдена",
+  "Password":                   "Пароль",
+
+  "Re-sent":                    "Выслано повторно",
+  "Register":                   "Регистрация",
+  "Remember Me":                "Запомнить меня",
+  "Reset Password":             "Сброс пароля",
+
+  "Send Password Reset Link":   "Отправить ссылку для сброса пароля",
+  "Service Unavailable":        "Служба недоступна",
+
+  "The user is already registered.":                  "Пользователь уже зарегистрирован.",
+  "This e-mail address is already in the database.":  "Такой адрес e-mail уже есть в базе данных.",
+  "Too Many Requests":                                "Слишком много запросов",
+  "Toggle navigation":                                "Переключение навигации",
+
+  "Unauthorized":               "Неавторизованный",
+
+  "Verify Your Email Address":  "Подтверждение e-mail адреса",
+
+  "Whoops!":                    "Упс!",
+
+  "":      "",
+
+  "You are logged in!":         "Вы вошли в систему!"
+}
