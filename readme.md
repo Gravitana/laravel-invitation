@@ -1,6 +1,4 @@
-# Регистрация по приглашению
-
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# <img src="https://laravel.com/assets/img/components/logo-laravel.svg"> Регистрация по приглашению
 
 ## About
 Регистрация пользователей происходит по ссылке из письма, высланного админом: 
