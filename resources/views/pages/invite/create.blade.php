@@ -4,7 +4,10 @@
         <div class="row justify-content-md-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('lng.invite.invite_new_user') }}</div>
+                    <div class="card-header">
+                        @include('partials.close_back_button')
+                        {{ __('lng.invite.invite_new_user') }}
+                    </div>
                     <div class="card-body">
                         
                         @include('partials.errors')

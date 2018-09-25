@@ -17,7 +17,7 @@ class AdminMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (!Auth::user()->isAdmin())
+        if (!Auth::user() || !Auth::user()->isAdmin())
         {
             SWAL::message(__('Whoops!'), __('lng.for_admin_only'),'error',['timer'=>5000]);
             return redirect()->back();
