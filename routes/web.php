@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('invite', 'InviteController@create')->name('invite');
 Route::post('invite', 'InviteController@store')->name('invite.store');
-Route::get('register/{?invite_token}', 'InviteController@getInviteByToken')->name('invite.use');
+Route::get('register/{invite_token?}', 'InviteController@getInviteByToken')->name('invite.use');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

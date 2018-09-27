@@ -64,7 +64,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     @if(Auth::user()->isAdmin())
-                                        <a class="dropdown-item"  href="{{ route('invite') }}">{{ __('lng.invite.invite_new_user') }}</a>
+                                        <a class="dropdown-item"  href="{{ route('invite') }}">{{ __('app.invite.invite_new_user') }}</a>
                                     @endif
                                     
                                     <a class="dropdown-item" href="{{ route('logout') }}"

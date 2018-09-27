@@ -20,7 +20,7 @@ class InviteMiddleware
     {
         if (!Request::input('invite_token')) // может быть передан не только в GET
         {
-            SWAL::message(__('lng.invite.invite_only'),__('lng.invite.notice_text'),'error',['timer'=>5000]);
+            SWAL::message(__('app.invite.invite_only'),__('app.invite.notice_text'),'error',['timer'=>5000]);
             return redirect()->back();
         }
     
@@ -29,7 +29,7 @@ class InviteMiddleware
     
         if (!$invite)
         {
-            SWAL::message(__('Whoops!'), __('lng.invite.token_not_relevant'),'error',['timer'=>5000]);
+            SWAL::message(__('Whoops!'), __('app.invite.token_not_relevant'),'error',['timer'=>5000]);
             return redirect()->back();
         }
     

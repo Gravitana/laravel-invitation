@@ -86,7 +86,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    {{ __('lng.site_title') }}
+                    {{ __('app.site_title') }}
                 </div>
 
                 {{--<div class="links">--}}

@@ -19,7 +19,7 @@ class AdminMiddleware
     {
         if (!Auth::user() || !Auth::user()->isAdmin())
         {
-            SWAL::message(__('Whoops!'), __('lng.for_admin_only'),'error',['timer'=>5000]);
+            SWAL::message(__('Whoops!'), __('app.for_admin_only'),'error',['timer'=>5000]);
             return redirect()->back();
         }
         return $next($request);

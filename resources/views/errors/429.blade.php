@@ -8,4 +8,4 @@
 </div>
 @endsection
 
-@section('message', __('lng.429_message.'))
+@section('message', __('app.429_message.'))

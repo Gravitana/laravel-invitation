@@ -75,7 +75,7 @@ class Invite extends Model
 //dd($params, __METHOD__);
         
         Mail::send('emails.invite', $params, function ($message) {
-            $message->from(\Auth::user()->email)->to($this->email)->subject(__('lng.invite_mail_subject'));
+            $message->from(\Auth::user()->email)->to($this->email)->subject(__('app.invite_mail_subject'));
         });
         
         return $this;

@@ -1,4 +1,4 @@
-@if (count($errors) > 0)
+@if ($errors->any())
     <div class="alert alert-danger">
         <strong>{{ __('Whoops!') }}</strong> {{ __('Having some problems:') }}<br>
         <br>

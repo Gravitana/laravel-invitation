@@ -76,7 +76,7 @@ class InviteController extends Controller
         $confirm = true;
         $confirmMessage = ($isNew)
             ? ''
-            : __('This e-mail address is already in the database.').' '.__('lng.invite.send_again')
+            : __('This e-mail address is already in the database.').' '.__('app.invite.send_again')
         ;
         if (!$confirm)
             return redirect()->back();
@@ -86,7 +86,7 @@ class InviteController extends Controller
         
         $title = ($isNew) ? __('OK') : __('Re-sent');
         
-        SWAL::message($title, __('lng.invite.created_and_sent_to', ['email'=>$email]),'success',['timer'=>3000]);
+        SWAL::message($title, __('app.invite.created_and_sent_to', ['email'=>$email]),'success',['timer'=>3000]);
         
         return redirect()->back();
     }

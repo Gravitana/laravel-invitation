@@ -8,4 +8,4 @@
 </div>
 @endsection
 
-@section('message', __($exception->getMessage() ?: 'lng.503_message'))
+@section('message', __($exception->getMessage() ?: 'app.503_message'))
